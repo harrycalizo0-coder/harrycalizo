@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background: #0b0c10;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0e0f11, #1f2833);
+            padding-bottom: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #66fcf1;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero span {
+            color: #66fcf1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #66fcf1;
+            color: #0b0c10;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #66fcf1;
+        }
+
+        /* PROFILE SECTION */
+        .profile-box {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #66fcf1;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .profile-role {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* SKILLS */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category ul {
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+
+        /* PROJECTS */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1f2833;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .project-btn {
+            display: inline-block;
+            margin-top: 10px;
+            color: #66fcf1;
+            text-decoration: none;
+        }
+
+        /* EXPERIENCE */
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2833;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h2 class="logo">My Portfolio<span></span></h2>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Hello, I'm <span>Angel M Calizo</span></h1>
+            <p><strong></strong> Programmer.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- PROFILE -->
+    <section id="profile">
+        <h2>My Profile</h2>
+
+        <div class="profile-box">
+            <!-- Palitan mo image link na ito -->
+            <img class="profile-pic" src="bulaga.jpg" alt="Profile Picture">
+
+            <p class="profile-name">Angel M Calizo</p>
+            <p class="profile-role">Web Developer | Programmer | Designer</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated and passionate developer who loves building clean,
+            responsive, and modern applications. I enjoy solving problems, learning new 
+            technologies, and creating meaningful digital experiences.
+        </p>
+        <p>
+            My goal is to keep improving and eventually become a highly skilled 
+            full-stack developer.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React / Vue / Angular</li>
+                    <li>Node.js / Express</li>
+                    <li>REST API</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Figma / Canva</li>
+                    <li>VS Code</li>
+                    <li>MySQL / Firebase</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Story Of the book</h3>
+                <a href-"file:///C:/Users/admin/Documents/harry%20calizo%20web/the%20storry.html"></a>
+                <a href="file:///C:/Users/admin/Documents/harry%20calizo%20web/the%20storry.html" class="project-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Recipe</h3>
+                 <a href-"file:///C:/Users/admin/Documents/harry%20calizo%20web/the%20storry.html"></a>
+                <a href="file:///C:/Users/admin/Documents/harry%20calizo%20web/RECIPE.html" " class="project-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>ORDER FORM HTML</h3>
+              <a href-"file:///C:/Users/admin/Documents/harry%20calizo%20web/the%20storry.html"></a>
+                <a href="file:///C:/Users/admin/Documents/harry%20calizo%20web/ORDER%20FORM.html?" class="project-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>BIKE</h3>
+                <p></p>
+                <a href="file:///C:/Users/admin/Documents/bike.html" class="project-btn">View</a>
+            </div>
+              <div class="project-card">
+                <h3>ORDER FORM PHP</h3>
+                <p></p>
+                <a href="file:///C:/Users/admin/Documents/harry%20calizo%20web/ORDER%20FORM%20PHP.php" class="project-btn">View</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Front-End Developer | Freelance</h3>
+                <span>2023 - Present</span>
+                <p>Creating websites and responsive UI for clients.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>IT Support Assistant</h3>
+                <span>2022 - 2023</span>
+                <p>Provided technical support and troubleshooting assistance.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work with me, feel free to reach out.</p>
+
+        <div class="contact-info">
+            <p>Email: <strong>yourname@email.com</strong></p>
+            <p>Phone: <strong>09XX-XXX-XXXX</strong></p>
+            <p>Location: <strong>Philippines</strong></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Angel Calizo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

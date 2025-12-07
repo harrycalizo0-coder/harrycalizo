@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+	<Style>
+	/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+/* Hero Section */
+.hero {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* ADD YOUR IMAGE HERE ↓ */
+    background: url('mark1.png') center/cover no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid #00adb5;
+    margin-bottom: 25px;
+    
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.highlight {
+    color: #00adb;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #00adb5;
+    color: blue;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: lightpink;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: lightblue;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background: #e9ecef;
+    text-align: center;
+	
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: lightpink;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover; /* Keeps your image nice and clean */
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: red;
+}
+
+.contact ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 58px;
+    }
+}
+</Style>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">MY PORTFOLIO</h1>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <img src="picweb.jpg" alt="Profile Picture" class="profile-img">
+        <div class="hero-content">
+            <h2>Hi, I'm <span class="highlight">MARK E. GACAYAN</span></h2>
+            
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>ABOUT ME</h2>
+        <p>
+           <i>Hi! I'm <b>MARK E. GACAYAN</b>. I'm passionate about technology, coding, and creativity.  
+                I love building websites, designing graphics, and exploring new ideas.  
+                I enjoy learning every day, especially anything related to computers and arts</i>.
+        </p><br> 
+		
+		
+		<div class="info-box">
+            <h2>Personal Information</h2>
+            <p>Birthday: <b>NOVEMBER 03, 2003</b></p>
+            <p>Age: <b>21</b></p>
+            <p>Hobbies: <b>Gaming, Coding, Drawing, Basketball</b></p>
+            <p>Favorite Food: <b>Shawarma</b></p>
+			<p>Favorite Drinks: <b>Milk Tea Macha</b></p>
+            <p>Favorite Color: <b>violet</b></p>
+			<p>Favorite teacher: <b>Sr.Reynaldo Hernandez</b></p>
+        </div></br>
+		<!-- GALLERY -->
+            <div class="gallery-card">
+			
+                <img src="pic 2.jpg" width= "200sspx">
+                <h3>MY GALLERY</h3>
+                <p>My pictures</p>
+                <a href="New folder" class="btn">View gellery</a>
+            </div></br> 
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2>PROJECT</h2>
+        <div class="project-list">
+		
+            <!-- STORY PROJECT -->
+            <div class="project-card">
+                <img src="mark pc.jpg" alt="Story Project">
+                <h3>THE STORY IN THE BOOK</h3>
+                <p>My creative writing story.</p>
+                <a href="thebook.html" class="btn" target="_blank">View Story</a>
+            </div>
+
+            <!-- RECIPE PROJECT -->
+            <div class="project-card">
+                <img src="bc.jpg" alt="Recipe Project">
+                <h3>MY RECIPE</h3>
+                <p>Recipe site showcasing ingredients and instructions.</p>
+                <a href="bicol.html" class="btn">View Project</a>
+            </div>
+
+            <!-- ORDERED FORM PROJECT -->
+            <div class="project-card">
+                <img src="th.jpg" alt="Ordered Form Project">
+                <h3>ORDER FORM</h3>
+                <p>Website guides users to easily order the pitzza.</p>
+                <a href="ANDOKS.html" class="btn">View Project</a>
+            </div>
+
+              <!-- FOURTH PROJECT EXAMPLE -->
+            <div class="project-card">
+                <img src="more3.jpg" alt="Bike Activity Project">
+                <h3>Bike Website</h3>
+                <p>Activity bike on website.</p>
+                <a href="BIKE.html" class="btn">View Project</a>
+            </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        
+        <ul>
+            <li>Email: <a href="gacayanmaark64@gmail.com">gacayanmaark64@gmail.com</a></li>
+			 <li>My number: <a href="09319646824">093196446824</a></li>
+           
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mark E. Gacayan.All rights reserved.</p>
+    </footer>
+</body>
+</html>
